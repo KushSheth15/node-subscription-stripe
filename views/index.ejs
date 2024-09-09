@@ -1,22 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Stripe Subscriptions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #0275d8;
+        }
+        .plan {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            display: inline-block;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .plan h2 {
+            color: #5bc0de;
+        }
+        .plan p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .plan a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #0275d8;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .plan a:hover {
+            background-color: #025aa5;
+        }
+    </style>
 </head>
 <body>
-    <h1>Plans</h1>
+    <h1>Welcome to Our Subscription Service</h1>
     
-    <h2>Starter</h2>
-    <p><b>$20/month</b></p>
-    <p>This is Starter plan</p>
-    <a href="/subscribe?plan=starter">Subscribe</a>
+    <div class="plan">
+        <h2>Starter Plan</h2>
+        <p><b>$20/month</b></p>
+        <p>This is the Starter plan, ideal for individuals or small teams.</p>
+        <a href="/subscribe?plan=starter">Subscribe</a>
+    </div>
 
-    <br><br>
+    <div class="plan">
+        <h2>Pro Plan</h2>
+        <p><b>$40/month</b></p>
+        <p>This is the Pro plan, perfect for growing teams with advanced needs.</p>
+        <a href="/subscribe?plan=pro">Subscribe</a>
+    </div>
 
-    <h2>Pro</h2>
-    <p><b>$40/month</b></p>
-    <p>This is Pro plan</p>
-    <a href="/subscribe?plan=pro">Subscribe</a>
-
+    <div class="plan">
+        <h2>Customize Plan</h2>
+        <p><b>Contact Us for Pricing</b></p>
+        <p>This plan allows you to customize your subscription based on your specific requirements.</p>
+        <a href="/subscribe?plan=customize">Subscribe</a>
+    </div>
 </body>
 </html>
